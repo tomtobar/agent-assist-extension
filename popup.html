@@ -10,13 +10,29 @@
 </head>
 
 <body>
-    <h2>Enter Your Email</h2>
+    <nav class="navbar">
+        <ul class="nav-list">
+            <li class="logout-btn nav-font hidden">Logout</li>
+            <li class="current-user nav-font"></li>
+        </ul>
+    </nav>
+    <section class="login-section">
+        <h2>Enter Your Email</h2>
 
-    <form action="/submit" method="POST">
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-        <button type="submit">Submit</button>
-    </form>
+        <form class="login-form">
+            <input type="email" id="email" name="email" required>
+            <!-- <button type="submit">Submit</button> -->
+        </form>
+    </section>
+
+    <div id="ai-response"></div>
+
+    <section class="agent-assist-section hidden">
+        <form class="prompt-form">
+            <input type="text" id="agent-assist" name="agent-assist" required placeholder="Ask me EMS questions">
+            <!-- <button type="submit">Submit</button> -->
+        </form>
+    </section>
 
     <script src="scripts/popup.js"></script>
 </body>
