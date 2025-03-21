@@ -1,0 +1,27 @@
+{
+    "manifest_version": 3,
+    "name": "Agent Assist",
+    "version": "1.0.0",
+    "description": "Agent Assist is an AI-powered support tool for Finalsite staff. It helps generate accurate, documentation-based answers to support questions by retrieving relevant help articles and formatting actionable responses.",
+    "author": "tomas.tobar@finalsite.com",
+    "icons": {
+        "128": "icons/agent-assist-logo-128.png",
+        "48": "icons/agent-assist-logo-48.png",
+        "32": "icons/agent-assist-logo-32.png",
+        "16": "icons/agent-assist-logo-16.png"
+    },
+    "permissions": [
+        "activeTab",
+        "storage",
+        "scripting"
+    ],
+    "host_permissions": [
+        "https://*.zendesk.com/*"
+    ],
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "32": "icons/agent-assist-logo-32.png"
+        }
+    }
+}
